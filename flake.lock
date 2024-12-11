@@ -1,0 +1,97 @@
+{
+  "nodes": {
+    "crane": {
+      "locked": {
+        "lastModified": 1733688869,
+        "narHash": "sha256-KrhxxFj1CjESDrL5+u/zsVH0K+Ik9tvoac/oFPoxSB8=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "604637106e420ad99907cae401e13ab6b452e7d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "garnix-lib": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1733872520,
+        "narHash": "sha256-7ZKi/hYpSX+sZCSfSVLhmp2AZF2Oj4HkpmjAmPAIjng=",
+        "owner": "garnix-io",
+        "repo": "garnix-lib",
+        "rev": "dd7675a40e2bce7ad57e3cf0d173a299489e8d88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "garnix-io",
+        "ref": "ad/add-mk-modules",
+        "repo": "garnix-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1717196966,
+        "narHash": "sha256-yZKhxVIKd2lsbOqYd5iDoUIwsRZFqE87smE2Vzf6Ck0=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1733550349,
+        "narHash": "sha256-NcGumB4Lr6KSDq+nIqXtNA8QwAQKDSZT7N9OTGWbTrs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e2605d0744c2417b09f8bf850dfca42fcf537d34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-24.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "garnix-lib": "garnix-lib",
+        "rust-module": "rust-module"
+      }
+    },
+    "rust-module": {
+      "inputs": {
+        "crane": "crane",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1733872912,
+        "narHash": "sha256-Scvils+WGKfeioumpQSmAw7+ZQLGWyj+JqTeTu4Usu8=",
+        "owner": "garnix-io",
+        "repo": "rust-module",
+        "rev": "04b050f9bdbb33fe3ec62fb9d2cd707107b6cd96",
+        "type": "github"
+      },
+      "original": {
+        "owner": "garnix-io",
+        "repo": "rust-module",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
