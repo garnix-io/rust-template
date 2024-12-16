@@ -1,7 +1,7 @@
 {
   inputs = {
-    garnix-lib.url = "github:garnix-io/garnix-lib/ad/add-garnix-config-option";
-    rust-module.url = "github:garnix-io/rust-module/ad/rework-rust-module-server-config";
+    garnix-lib.url = "github:garnix-io/garnix-lib";
+    rust-module.url = "github:garnix-io/rust-module";
   };
   outputs = inputs: inputs.garnix-lib.lib.mkModules {
     modules = [
@@ -18,7 +18,7 @@
           configuration = "backend";
           deployment = {
             type = "on-branch";
-            branch = "make-deployments-work";
+            branch = "main";
           };
         }
       ];
