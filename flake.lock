@@ -20,16 +20,15 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1734048015,
-        "narHash": "sha256-CqmjvJqDZpozqhH7CFoYZl3M8LmDCjcIflcUl06Gxq0=",
+        "lastModified": 1734372152,
+        "narHash": "sha256-jZweDJzvPz0Gfzt5d8hPwKezFH8zSJs1CA6TmKcB+N0=",
         "owner": "garnix-io",
         "repo": "garnix-lib",
-        "rev": "de5eed4dccb15883196e89d67aa7df88cb5ece4d",
+        "rev": "b7d7f410fc447614df4b41f1d16d1fdc9dbafd8f",
         "type": "github"
       },
       "original": {
         "owner": "garnix-io",
-        "ref": "ad/add-mk-modules",
         "repo": "garnix-lib",
         "type": "github"
       }
@@ -78,11 +77,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1734054057,
-        "narHash": "sha256-JZNTAnSG/iHHRjGXY2Utp+CirWgEjnCfcxgQ4f1lPxk=",
+        "lastModified": 1734372505,
+        "narHash": "sha256-le6RC1VVdn4JZW5BVy0JRTRNIvQI0exnWZcJ04CRJmI=",
         "owner": "garnix-io",
         "repo": "rust-module",
-        "rev": "c06bf23ae7ac5d848a770d925b1955e71a2c6306",
+        "rev": "68e9301be89208a2e675d82701e5cb6c70a8ceba",
         "type": "github"
       },
       "original": {

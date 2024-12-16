@@ -1,6 +1,6 @@
 {
   inputs = {
-    garnix-lib.url = "github:garnix-io/garnix-lib/ad/add-mk-modules";
+    garnix-lib.url = "github:garnix-io/garnix-lib";
     rust-module.url = "github:garnix-io/rust-module";
   };
   outputs = inputs: inputs.garnix-lib.lib.mkModules {
@@ -10,8 +10,18 @@
     config = {
       rust.backend = {
         src = ./sample-rust-project;
-        serverCommand = "sample-rust-project";
+        webServer.command = "sample-rust-project";
+        webServer.port = 3000;
       };
+      garnix.config.servers = [
+        {
+          configuration = "backend";
+          deployment = {
+            type = "on-branch";
+            branch = "main";
+          };
+        }
+      ];
     };
   };
 }
