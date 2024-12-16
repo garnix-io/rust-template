@@ -12,8 +12,16 @@
         src = ./sample-rust-project;
         webServer.command = "sample-rust-project";
         webServer.port = 3000;
-        webServer.deployBranch = "make-deployments-work";
       };
+      garnix.config.servers = [
+        {
+          configuration = "backend";
+          deployment = {
+            type = "on-branch";
+            branch = "make-deployments-work";
+          };
+        }
+      ];
     };
   };
 }
