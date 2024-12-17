@@ -1,6 +1,6 @@
 {
   inputs = {
-    garnix-lib.url = "github:garnix-io/garnix-lib";
+    garnix-lib.url = "github:garnix-io/garnix-lib/ad/add-auto-garnix-config-generation";
     rust-module.url = "github:garnix-io/rust-module";
   };
   outputs = inputs: inputs.garnix-lib.lib.mkModules {
@@ -13,15 +13,8 @@
         webServer.command = "sample-rust-project";
         webServer.port = 3000;
       };
-      garnix.config.servers = [
-        {
-          configuration = "backend";
-          deployment = {
-            type = "on-branch";
-            branch = "main";
-          };
-        }
-      ];
+
+      garnix.deployBranch = "use-auto-config";
     };
   };
 }
