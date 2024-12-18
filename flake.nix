@@ -7,11 +7,12 @@
     modules = [
       inputs.rust-module.garnixModules.default
     ];
-    config = {
+    config = { pkgs, ... }: {
       rust.backend = {
         src = ./sample-rust-project;
         webServer.command = "sample-rust-project";
         webServer.port = 3000;
+        devTools = [ pkgs.jq ];
       };
       garnix.config.servers = [
         {
