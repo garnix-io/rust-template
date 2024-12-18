@@ -12,6 +12,7 @@
         src = ./sample-rust-project;
         webServer.command = "sample-rust-project";
         webServer.port = 3000;
+        devTools = [ pkgs.jq ];
       };
       garnix.config.servers = [
         {
