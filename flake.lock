@@ -20,11 +20,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1734372152,
-        "narHash": "sha256-jZweDJzvPz0Gfzt5d8hPwKezFH8zSJs1CA6TmKcB+N0=",
+        "lastModified": 1734542908,
+        "narHash": "sha256-bahyS6qxwd19ivD/b4jNZed6wn0zT0fU5sb++XYFzdw=",
         "owner": "garnix-io",
         "repo": "garnix-lib",
-        "rev": "b7d7f410fc447614df4b41f1d16d1fdc9dbafd8f",
+        "rev": "a9ca1f9a4e1987d4d078433da5dac4cb3ca40fbf",
         "type": "github"
       },
       "original": {

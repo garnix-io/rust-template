@@ -14,15 +14,8 @@
         webServer.port = 3000;
         devTools = [ pkgs.jq ];
       };
-      garnix.config.servers = [
-        {
-          configuration = "backend";
-          deployment = {
-            type = "on-branch";
-            branch = "main";
-          };
-        }
-      ];
+
+      garnix.deployBranch = "main";
     };
   };
 }
