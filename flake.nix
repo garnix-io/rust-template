@@ -7,7 +7,7 @@
     modules = [
       inputs.rust-module.garnixModules.default
     ];
-    config = {
+    config = { pkgs, ... }: {
       rust.backend = {
         src = ./sample-rust-project;
         webServer.command = "sample-rust-project";
