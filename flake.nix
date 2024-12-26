@@ -16,6 +16,8 @@
       };
 
       garnix.deployBranch = "main";
+
+      foo.bar = 42;
     };
   };
 }
