@@ -1,10 +1,13 @@
 use rouille::router;
-
-const PORT: u16 = 3000;
+use std::env;
 
 fn main() {
-    eprintln!("Listening on port {PORT}");
-    rouille::start_server(("0.0.0.0", PORT), |req| {
+    let port: u16 = env::var("PORT")
+        .expect("PORT env var must be set")
+        .parse()
+        .expect("PORT must be an integer from 0-65535");
+    eprintln!("Listening on port {port}");
+    rouille::start_server(("0.0.0.0", port), |req| {
         router!(req,
             (GET) (/) => {
                 rouille::Response::text("Hello from rust!")
