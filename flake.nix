@@ -1,7 +1,7 @@
 {
   inputs = {
     garnix-lib.url = "github:garnix-io/garnix-lib";
-    rust-module.url = "github:garnix-io/rust-module/ad/set-port-env-variable";
+    rust-module.url = "github:garnix-io/rust-module";
   };
   outputs = inputs: inputs.garnix-lib.lib.mkModules {
     modules = [

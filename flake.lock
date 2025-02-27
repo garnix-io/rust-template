@@ -77,16 +77,15 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1740455512,
-        "narHash": "sha256-E/gLX6Jv/vNj5vdPupkMa/yf2d9rPiUwHmxEBFqJ+uQ=",
+        "lastModified": 1740670150,
+        "narHash": "sha256-qw29gQh/+E7LPess2s0S5YzDgqfea4QElDSjffzu/Q0=",
         "owner": "garnix-io",
         "repo": "rust-module",
-        "rev": "3f5de9a7729ff53db7b36e3d56a5dded63a1b34e",
+        "rev": "33742c3329a5857002202d606a8be728076e1c46",
         "type": "github"
       },
       "original": {
         "owner": "garnix-io",
-        "ref": "ad/set-port-env-variable",
         "repo": "rust-module",
         "type": "github"
       }
